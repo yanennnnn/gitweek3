@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 第一題:.印出乘法表，從 3~15，從 3x1、3x2~一直到 15x15
+    function getMultiplication( x, y ){
+      let str=[];
+      for( let i = 3; i <= x; i++){
+        for(let j = 1; j<=y; j++){
+          str.push(`${i}x${j}=${i*j}`);
+        }
+      }
+      console.log(str.join(','));
+    }
+    getMultiplication(15,15);
+  </script>
+  <script>
+    // 第二題 BMI
+    function getBMI(cm,kg){
+      const bmi = parseInt( kg / (cm / 100 * cm / 100) ).toFixed(1);
+      console.log(bmi)
+    }
+    getBMI(178,70)
+  </script>
+</body>
+</html>
